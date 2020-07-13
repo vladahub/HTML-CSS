@@ -1,0 +1,28 @@
+.block
+{
+	width: 150px;
+	height: 150px;
+
+	background-color: pink;
+}
+
+.block:hover
+{
+	transition-property: background;
+	transition-duration: 500ms;
+
+	background-color: magenta;
+}
+
+.animation
+{
+	animation: show 3s linear 400ms infinite alternate;
+}
+
+@keyframes show 
+{
+	25%  { transform: translate(100px); }
+	50%  { transform: translate(100px, 150px); }
+	75%, 
+	100% { transform: translate(100px, 150px) rotate(145deg) scale(2); }
+}
