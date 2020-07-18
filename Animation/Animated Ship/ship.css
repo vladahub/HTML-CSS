@@ -1,8 +1,5 @@
 @keyframes sky {
-    0% 		 { background: darkslateblue;
-         	   box-shadow: 0 -400px 300px -300px orangered inset; }
-
-	7%, 20%  { background: skyblue;
+	0%, 20%  { background: skyblue;
     	 	   box-shadow: 0 -400px 300px -300px steelblue inset; }
 
     50% 	 { background: darkslateblue;
@@ -10,9 +7,6 @@
 
     65%, 90% { background: darkslateblue;
           	   box-shadow: 0 -400px 300px -300px transparent inset; }
-
-    100% 	 { background: darkslateblue;
-               box-shadow: 0 -400px 300px -300px orangered inset; }
 }
 
 @keyframes cloud1 {
@@ -187,6 +181,9 @@
     border-radius: 50%;
     background: #ffcf11;
     box-shadow: 0 0 100px #ffdf05;
+
+    transform-origin: center;
+    animation: sun 10s linear infinite;
 }
 
 .sun-wrapper {
